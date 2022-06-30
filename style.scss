@@ -310,27 +310,27 @@ body {
 /* ========== ANIMATE STARS ========== */
 
 .night-star-1 {
-  animation: random-star 5s ease-in-out infinite alternate, shooting-star 5s linear infinite;
+  animation: random-star-1 5s ease-in-out infinite alternate, shooting-star 5s linear infinite;
   left: 50%;
 }
 
 .night-star-2 {
-  animation: random-star 8s ease-in-out .5s infinite alternate, shooting-star 8s linear .5s infinite;
+  animation: random-star-2 8s ease-in-out .5s infinite alternate, shooting-star 8s linear .5s infinite;
   left: 38%;
 }
 
 .night-star-3 {
-  animation: random-star 10s ease-in-out 3s infinite alternate, shooting-star 10s linear 3s infinite;
+  animation: random-star-1 10s ease-in-out 3s infinite alternate, shooting-star 10s linear 3s infinite;
   left: 40%;
 }
 
 .night-star-4 {
-  animation: random-star 8s ease-in-out 7s infinite alternate, shooting-star 8s linear 7s infinite;
+  animation: random-star-2 8s ease-in-out 7s infinite alternate, shooting-star 8s linear 7s infinite;
   left: 45%;
 }
 
 .night-star-5 {
-  animation: random-star 5s ease-in-out 1s infinite alternate, shooting-star 5s linear 1s infinite;
+  animation: random-star-1 5s ease-in-out 1s infinite alternate, shooting-star 5s linear 1s infinite;
   left: 55%;
 }
 
@@ -505,24 +505,73 @@ body {
 }
 
 
-/* ========== Star animation - left-right movement ========== */
+/* ========== Star animation - left-right movement -1 ========== */
 
-@-webkit-keyframes random-star {
+@-webkit-keyframes random-star-1 {
   0% {
-    margin-left: 0px;
+    margin-left: -20px;
+  }
+
+  35% {
+    margin-left: 65px;
   }
 
   100% {
-    margin-left: 55px;
+    margin-left: 5px;
   }
 }
 
-@keyframes random-star {
+@keyframes random-star-1 {
   0% {
-    margin-left: 0px;
+    margin-left: -20px;
+  }
+
+  35% {
+    margin-left: 65px;
   }
 
   100% {
-    margin-left: 55px;
+    margin-left: 5px;
+  }
+}
+
+
+/* ========== Star animation - left-right movement - 2 ========== */
+
+@-webkit-keyframes random-star-2 {
+  0% {
+    margin-left: 80px;
+  }
+
+  35% {
+    margin-left: 0px;
+  }
+
+
+  75% {
+    margin-left: 40px;
+  }
+
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes random-star-2 {
+  0% {
+    margin-left: 80px;
+  }
+
+  35% {
+    margin-left: 0px;
+  }
+
+
+  75% {
+    margin-left: 40px;
+  }
+
+  100% {
+    margin-left: 0px;
   }
 }
